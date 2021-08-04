@@ -1,0 +1,24 @@
+:root {
+  --color-white: #ffffff;
+  --color-red: #ff0349;
+  --color-dark-blue: #05213e;
+  --color-blue: #0e355d;
+  --color-light-blue: #1a4377;
+
+
+  --text-color-light-blue: #85bada;
+  --text-color-blue: #0a2745;
+
+  --gradient-card: linear-gradient(132deg, rgba(5,33,62,1) 43%, rgba(255,0,71,1) 100%);
+  --gradient-bg-1: linear-gradient(70deg, rgba(5,33,62,1) 30%, rgba(5,33,62,0.5) 100%);
+  --gradient-bg-2: linear-gradient(42deg, rgba(255,3,73,1) 0%, rgba(5,33,62,1) 55%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: 'Lato';
+}
