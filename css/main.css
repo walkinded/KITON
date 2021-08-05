@@ -19,6 +19,35 @@
   padding: 0;
 }
 
+a {
+  color: var(--color-white);
+  text-decoration: none;
+}
+
+li {
+  list-style: none;
+}
+
 body {
   font-family: 'Lato';
+  background-color: var(--color-dark-blue);
+}
+
+.box-container {
+  max-width: 1600px;
+  width: 100%;
+  margin: 0px auto;
+}
+
+.main-header {
+}
+
+.main-header__logo {
+}
+.nav {
+
+}
+.main-header__phones {
+}
+.custom-btn {
 }
