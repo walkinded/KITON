@@ -1,15 +1,30 @@
+@media all and (max-width: 1600px) {
+  .box-container {
+    max-width: 1440px;
+  }
+}
 @media all and (max-width: 1440px) {
   .box-container {
     max-width: 1366px;
-    margin: 0 20px;
+  }
+}
+@media all and (max-width: 1430px) {
+  .box-container {
+    max-width: 1280px;
   }
 }
 
-@media all and (max-width: 1366px) {}
+@media all and (max-width: 1365px) {
+
+}
 
 @media all and (max-width: 1320px) {}
 
-@media all and (max-width: 1280px) {}
+@media all and (max-width: 1279px) {
+  .main-header__phones {
+    display: none;
+  }
+}
 
 @media all and (max-width: 1200px) {}
 
