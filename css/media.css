@@ -1,6 +1,17 @@
+@media all and (min-width: 1921px) {
+  .red-img {
+    max-width: initial !important;
+    width: 100vw !important;
+  }
+}
+
 @media all and (max-width: 1600px) {
   .box-container {
     max-width: 1440px;
+  }
+  .red-img {
+    max-width: 680px !important;
+    width: auto !important;
   }
 }
 @media all and (max-width: 1440px) {
@@ -101,6 +112,11 @@
   .header__nav_item_mobile {
     text-align: center;
   }
+
+  .main-catalog__body {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: 360px minmax(300px, auto);
+  }
 }
 
 @media all and (max-width: 980px) {}
@@ -136,9 +152,17 @@
   .main-block__body {
     padding-top: 150px;
   }
+  .text__title {
+    font-size: 20px;
+  }
+  
 }
 
-@media all and (max-width: 550px) {}
+@media all and (max-width: 550px) {
+  .main-catalog__body {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 
 @media all and (max-width: 540px) {
   .main-header .main-header__phones {

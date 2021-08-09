@@ -9,3 +9,13 @@ $(function() {
     $('.header__mobile').fadeOut();
   });
 });
+
+$(window).scroll(function() {
+  if ($(this).scrollTop() > 100){
+      $('header').addClass('scrolled');        
+      $('.menu').addClass('menu_scrolled'); 
+  }else{
+      $('header').removeClass("scrolled");   
+      $('.menu').removeClass('menu_scrolled');  
+    }
+}); 
