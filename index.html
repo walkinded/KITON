@@ -4,40 +4,130 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="libs/fontawesome/css/all.min.css">
   <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/media.css">
   <link rel="stylesheet" href="css/fonts.css">
   <title>Главная</title>
 </head>
 <body>
-  <header>
-    <div class="box-container">
+  <main>
+    <header>
+      <div class="box-container">
+  
+        <div class="main-header">
 
-      <div class="main-header">
-        <div class="main-header__logo">
-          <a href="index.html"><img src="img/icon/header-logo.svg" alt=""></a> 
-          <p>Техническое снабжение <br>
-            водного транспорта</p>
+          <div class="main-header__logo">
+            <a href="index.html"><img src="img/icon/header-logo.svg" alt=""></a> 
+            <p>Техническое снабжение <br>
+              водного транспорта</p>
+          </div>
+
+          <nav class="nav">
+            <ul>
+              <li><a href="#">Каталог</a></li>
+              <li><a href="#">Прайс-лист</a></li>
+              <li><a href="#">Портфолио</a></li>
+              <li><a href="#">Доставка и оплата</a></li>
+              <li><a href="#">Статьи и новости</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+          </nav>
+
+          <div class="main-header__phones">
+            <a href="#">+7 978 749-05-42</a>
+            <a href="#">+7 978 984-25-69</a>
+          </div>
+
+          <a href="#" class="custom-btn">Заказать звонок</a>
+
+          <span class="header__button-menu"><i class="fas fa-bars"></i></span>
         </div>
-        <nav class="nav">
-          <ul>
-            <li><a href="#">Каталог</a></li>
-            <li><a href="#">Прайс-лист</a></li>
-            <li><a href="#">Портфолио</a></li>
-            <li><a href="#">Доставка и оплата</a></li>
-            <li><a href="#">Статьи и новости</a></li>
-            <li><a href="#">Контакты</a></li>
-          </ul>
-        </nav>
-        <div class="main-header__phones">
-          <a href="#">+7 978 749-05-42</a>
-          <a href="#">+7 978 984-25-69</a>
+  
+        <div class="header__mobile">
+          <span class="header__mobile-close"><i class="fas fa-times"></i></span>
+          <div class="header__nav_mobile">
+            <ul class="header__nav_item_mobile">
+              <li><a href="#">Каталог</a></li>
+              <li><a href="#">Прайс-лист</a></li>
+              <li><a href="#">Портфолио</a></li>
+              <li><a href="#">Доставка и оплата</a></li>
+              <li><a href="#">Статьи и новости</a></li>
+              <li><a href="#">Контакты</a></li>
+            </ul>
+            <div class="main-header__phones">
+              <a href="#">+7 978 749-05-42</a>
+              <a href="#">+7 978 984-25-69</a>
+            </div>
+          </div>
         </div>
-        <a href="#" class="custom-btn">Заказать звонок</a>
+  
       </div>
+    </header>
+  
+    <section class="main-block">
+      <div class="box-container">
+        <div class="main-block__body">
 
-    </div>
-  </header>
+          <div class="main-block__text">
+            <h1>Продажа и доставка <br>
+              <span>запчастей для судов</span>  
+            </h1>
+            <h2>любого класса в любой порт Крыма</h2>
+
+            <p>Стремимся выбирать максимально надёжных изготовителей, находить качественные 
+              судовые запчасти, чтобы обеспечить бесперебойную работу судна и уменьшить 
+              эксплуатационные затраты судовладельца</p>
+
+            <a href="#" class="catalog-btn">
+              Перейти в каталог
+              <span class="catalog-btn__circle"><i class="fas fa-chevron-right"></i></span>
+            </a>
+          </div>
+
+          <div class="main-block__item">
+
+            <div class="main-block__box">
+              <div class="box__title">
+                <p>Гарантия на все товары</p>
+              </div>
+              <div class="box__desc">
+                <p>Гарантия на товары от 6 месяцев до 3 лет. 
+                  В случае брака, меняем товар без лишних вопросов</p>
+              </div>
+            </div>
+
+            <div class="main-block__box">
+              <div class="box__title">
+                <p>Безопасная оплата</p>
+              </div>
+              <div class="box__desc">
+                <p>Оплачивайте банковской картой, PayPal, банковским переводом или наличными при получении</p>
+              </div>
+            </div>
+
+            <div class="main-block__box">
+              <div class="box__title">
+                <p>Контроль доставки</p>
+              </div>
+              <div class="box__desc">
+                <p>Качественно упакуем, передадим 
+                  в отправку и будем следить за заказом
+                  до вручения</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+ 
+
+
+  <script src="libs/jquery/dist/jquery.min.js"></script>
+  <script src="libs/fancybox-2.1.7/source/jquery.fancybox.js"></script>
+	<script src="js/common.js"></script>
   
 </body>
 </html>

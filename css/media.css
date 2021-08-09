@@ -8,14 +8,13 @@
     max-width: 1366px;
   }
 }
-@media all and (max-width: 1430px) {
+
+@media all and (max-width: 1366px) {
   .box-container {
-    max-width: 1280px;
+    max-width: 100%;
+    width: auto;
+    padding: 0 20px;
   }
-}
-
-@media all and (max-width: 1365px) {
-
 }
 
 @media all and (max-width: 1320px) {}
@@ -24,28 +23,146 @@
   .main-header__phones {
     display: none;
   }
+  .nav {
+    margin: 0px 15px;
+  }
+
 }
 
-@media all and (max-width: 1200px) {}
+@media all and (max-width: 1200px) {
+  .main-block__body {
+    flex-direction: column;
+  }
 
-@media all and (max-width: 1024px) {}
+  .main-block__item {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+  }
+
+  .main-block__box {
+    max-width: 24%;
+    height: max-content;
+  }
+  .main-block {
+    height: max-content;
+  }
+}
+
+@media all and (max-width: 1100px) {
+  .custom-btn {
+    display: none;
+  }
+}
+
+@media all and (max-width: 1024px) {
+  .box-container {
+    max-width: 100%;
+    padding: 0 20px;
+  }
+  .main-header__phones {
+    display: flex;
+  }
+  .nav {
+    display: none;
+  }
+
+  .header__button-menu {
+    display: block;
+  }
+
+  .header__mobile {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 2;
+    background: var( --color-blue);
+    overflow: auto;
+    padding: 70px 30px 40px;
+  }
+
+  .header__mobile-close {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    font-size: 28px;
+    cursor: pointer;
+  }
+
+  .header__nav_mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+  }
+
+  .header__nav_item_mobile {
+    text-align: center;
+  }
+}
 
 @media all and (max-width: 980px) {}
 
 @media all and (max-width: 850px) {}
 
-@media all and (max-width: 768px) {}
+@media all and (max-width: 768px) {
+  .main-block__body {
+    padding-top: 170px;
+  }
+  .main-block__item {
+    display: flex;
+    justify-content: inherit;
+    flex-direction: column;
+    margin-top: 30px;
+  }
 
-@media all and (max-width: 640px) {}
+  .main-block__box {
+    max-width: 100%;
+    width: auto;
+    height: max-content;
+  }
+}
+
+@media all and (max-width: 640px) {
+  .main-block__text h1 {
+    font-size: 38px;
+  }
+  
+  .main-block__text h2 {
+    font-size: 22px;
+  }
+  .main-block__body {
+    padding-top: 150px;
+  }
+}
 
 @media all and (max-width: 550px) {}
 
-@media all and (max-width: 540px) {}
+@media all and (max-width: 540px) {
+  .main-header .main-header__phones {
+    display: none;
+  }
+}
 
-@media all and (max-width: 480px) {}
+@media all and (max-width: 480px) {
+
+}
 
 @media all and (max-width: 440px) {}
 
 @media all and (max-width: 400px) {}
 
-@media all and (max-width: 380px) {}
+@media all and (max-width: 380px) {
+  .main-header__logo {
+    max-width: 200px;
+  }
+  .main-header__logo img {
+    max-width: 100%;
+  }
+  .main-header__logo p {
+    font-size: 12px;
+    left: 75px;
+  }
+}
