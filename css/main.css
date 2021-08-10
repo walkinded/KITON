@@ -377,12 +377,13 @@ header {
   font-weight: 900;
   font-size: 30px;
   margin-bottom: 40px;
-  transition: .4s;
+  transition: .6s;
 }
 
 .main-catalog__item:hover .text__title {
   transform: scale(1.1);
-  padding: 0 0px 0 20px;
+  padding: 0 0px 0 30px;
+  /* margin: 0px auto 35px; */
 }
 
 .main-catalog__item:hover img:not(.red-img) {
