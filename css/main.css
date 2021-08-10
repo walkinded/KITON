@@ -211,7 +211,9 @@ header {
 .main-block {
   color: var(--color-white);
   height: 795px;
+  /* height: 100vh; */
   background: url('../img/bg/fon_1.jpg') no-repeat center top / cover;
+  background-attachment: fixed;
 }
 
 .main-block__body {
