@@ -16,8 +16,8 @@
 
   --gradient-card-catalog: linear-gradient(
     132deg,
-    rgba(5, 33, 62, 0.85) 43%,
-    rgba(255, 0, 71, 0.85) 100%
+    rgba(5, 33, 62, .9) 43%,
+    rgba(255, 0, 71, .9) 100%
   );
 
   --gradient-tab-product: linear-gradient(
@@ -26,15 +26,10 @@
     rgba(19, 69, 121, 1) 100%
   );
 
-  --gradient-bg-1: linear-gradient(
-    70deg,
-    rgba(5, 33, 62, 1) 30%,
-    rgba(5, 33, 62, 0.5) 100%
-  );
-  --gradient-bg-2: linear-gradient(
-    42deg,
-    rgba(255, 3, 73, 1) 0%,
-    rgba(5, 33, 62, 1) 55%
+  --gradient-bg-forma: linear-gradient(
+    340deg,
+    rgba(72, 54, 110, .7) 0%,
+    rgba(23, 53, 93, .7) 100%
   );
 }
 
@@ -371,7 +366,7 @@ header {
   align-items: center;
 }
 
-.main-catalog__item img {
+ .main-catalog__item img {
   position: absolute;
   width: 80%;
   height: auto;
@@ -384,7 +379,9 @@ header {
   width: 100%;
   height: 100%;
   background: var(--gradient-card-catalog);
+  mix-blend-mode: multiply;
 }
+
 
 .main-catalog__text {
   position: relative;
@@ -472,7 +469,7 @@ header {
   font-size: 16px;
   color: var(--color-white);
   padding-left: 44px;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
 .tabs li a::before {
@@ -483,7 +480,7 @@ header {
   border: 1px solid transparent;
   left: 20px;
   border-radius: 50%;
-  transition: all .5s;
+  transition: all 0.5s;
 }
 
 .tabs li:hover:not(.active) a {
@@ -496,7 +493,7 @@ header {
   border-radius: 50%;
   border: 1px solid var(--color-red);
   left: 20px;
-  transition: all .4s;
+  transition: all 0.4s;
 }
 
 .tabs li.active,
@@ -517,7 +514,6 @@ header {
   margin-left: 34px;
   width: 100%;
 }
-
 
 /* slick */
 
@@ -544,7 +540,7 @@ header {
 
   margin-bottom: 20px;
 }
-.popular-product__name p{
+.popular-product__name p {
   font-size: 17px;
   font-weight: bold;
   color: var(--text-color-blue);
@@ -598,17 +594,17 @@ header {
 
   margin: -15px 0 0 0;
   cursor: pointer;
-  transition: all .3s;
+  transition: all 0.3s;
 }
 
 .tab_content .slick-arrow.slick-prev {
   right: 76px;
-  background: url('../img/icon/prev-btn.svg') 0 0 / 100% no-repeat;
+  background: url("../img/icon/prev-btn.svg") 0 0 / 100% no-repeat;
 }
 
 .tab_content .slick-arrow.slick-next {
   right: 10px;
-  background: url('../img/icon/next-btn.svg') 0 0 / 100% no-repeat;
+  background: url("../img/icon/next-btn.svg") 0 0 / 100% no-repeat;
 }
 
 .slick-prev:hover,
@@ -631,6 +627,170 @@ header {
   border: 1px solid var(--color-red);
   border-radius: 50%;
 }
-.tab_content .slick-dots .slick-active button{
+.tab_content .slick-dots .slick-active button {
   background: var(--color-red);
+}
+
+/* ========== did-not-find ========== */
+.did-not-find {
+  background: url("../img/bg/fon_2.jpg") no-repeat center top / cover;
+  height: 723px;
+  display: flex;
+}
+.did-not-find__body {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+.did-not-find__text {
+  max-width: 530px;
+  width: 100%;
+  color: var(--color-white);
+  padding-left: 18%;
+}
+.did-not-find__text p {
+  font-size: 22px;
+  font-weight: 600;
+}
+.did-not-find__title h2 {
+  font-size: 58px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: var(--color-white);
+  margin-bottom: 30px;
+}
+
+.did-not-find__title h2 span {
+  color: var(--color-red);
+}
+
+.forma {
+  max-width: 317px;
+  width: 100%;
+  height: 427px;
+
+  padding: 50px 31px 50px 48px;
+
+  background: var(--gradient-bg-forma);
+
+  display: flex;
+  flex-direction: column;
+  /* align-items: center; */
+}
+
+.forma__title {
+  color: var(--color-white);
+  font-size: 30px;
+  font-weight: 900;
+
+  margin-bottom: 15px;
+}
+.forma__subtitle {
+  color: var(--color-white);
+  font-size: 16px;
+
+  margin-bottom: 36px;
+}
+
+input[type="text"],
+input[type="tel"] {
+  max-width: 279px;
+  width: 100%;
+  height: 55px;
+
+  border-radius: 6px;
+  border: 0;
+
+  padding-left: 18px;
+
+  font-size: 14px;
+  font-weight: 400;
+  color: var(--color-blue);
+  margin-bottom: 19px;
+}
+
+input::placeholder {
+  color: var(--color-blue);
+}
+
+.forma .custom-btn {
+  max-width: 298px;
+  width: 100%;
+  height: 61px;
+
+  font-size: 16px;
+
+  border-radius: 30.5px;
+  margin-top: 27px;
+}
+
+.container {
+  display: block;
+  position: relative;
+  padding-left: 25px;
+  margin-top: 24px;
+  cursor: pointer;
+  font-size: 13px;
+  color: var(--color-white);
+  font-weight: 400;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+/* Hide the browser's default checkbox */
+.container input {
+  position: absolute;
+  opacity: 0;
+  cursor: pointer;
+  height: 0;
+  width: 0;
+}
+
+/* Create a custom checkbox */
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 14px;
+  width: 14px;
+  border: 1px solid var(--color-white);
+  background-color: inherit;
+}
+
+/* On mouse-over, add a grey background color */
+.container:hover input ~ .checkmark {
+  background-color: #ccc;
+}
+
+/* When the checkbox is checked, add a blue background */
+.container input:checked ~ .checkmark {
+  /* background-color: #2196F3; */
+}
+
+/* Create the checkmark/indicator (hidden when not checked) */
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none;
+}
+
+/* Show the checkmark when checked */
+.container input:checked ~ .checkmark:after {
+  display: block;
+}
+
+/* Style the checkmark/indicator */
+.container .checkmark:after {
+  left: 5px;
+  top: 1px;
+  width: 4px;
+  height: 8px;
+  border: solid var(--color-red);
+  border-width: 0 2px 2px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
 }

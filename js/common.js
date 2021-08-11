@@ -26,6 +26,7 @@ $(document).ready(function($) {
   $('.tab_content:first').show();
   $('.tabs li:first').addClass('active');
   $('.tabs li').click(function(event) {
+    event.preventDefault();
     $('.tab_content').slick('refresh');
     $('.tabs li').removeClass('active');
     $(this).addClass('active');
