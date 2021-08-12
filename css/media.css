@@ -63,6 +63,9 @@
     width: auto;
     padding: 0 10px;
   }
+  .did-not-find .box-container {
+    width: 100%;
+  }
 }
 
 @media all and (max-width: 1320px) {}
