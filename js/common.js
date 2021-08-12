@@ -1,3 +1,4 @@
+/* ==================== mobile menu ==================== */ 
 $(function() {
   $('.header__button-menu').click(function() {
     $('body').addClass('overflow-hidden');
@@ -10,6 +11,7 @@ $(function() {
   });
 });
 
+/* ==================== scrolled header ==================== */ 
 $(window).scroll(function() {
   if ($(this).scrollTop() > 100){
       $('header').addClass('scrolled');        
@@ -21,6 +23,29 @@ $(window).scroll(function() {
 }); 
 
 
+/* ==================== libs ==================== */ 
+$(".phone").mask("+7(999)999-99-99");
+$(".fancybox").fancybox();
+
+
+/* ==================== to up scroller ==================== */ 
+$(document).ready(function(){   
+  $(window).scroll(function () {
+      if ($(this).scrollTop() > 0) {
+          $('#scroller').fadeIn();
+      } else {
+          $('#scroller').fadeOut();
+      }
+  });
+  $('#scroller').click(function () {
+      $('body,html').animate({
+          scrollTop: 0
+      }, 400);
+      return false;
+  });
+});
+
+/* ==================== tabs ==================== */
 $(document).ready(function($) {
   $('.tab_content').hide();
   $('.tab_content:first').show();
@@ -38,6 +63,7 @@ $(document).ready(function($) {
   });
 });
 
+/* ==================== slick slider ==================== */
 $('.tab_content').slick({
   arrows: true,
   slidesToShow: 4,
