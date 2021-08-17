@@ -32,6 +32,12 @@
     rgba(23, 53, 93, 0.7) 100%
   );
 
+  --gradient-bg-forma2: linear-gradient(
+    320deg,
+    rgba(40, 10, 104, .9) 10%,
+    rgba(23, 53, 93, .9) 60%
+  );
+
   --gradient-bg-accardion: linear-gradient(
     111deg,
     rgba(4, 64, 95, 1) 40%,
@@ -1324,6 +1330,130 @@ input::placeholder {
   grid-template-columns: repeat(3, 1fr);
   grid-auto-rows: minmax(365px, auto) !important;
   grid-gap: 30px;
-  
+
   margin-top: 50px;
+}
+
+/* ========== Contact Page ==========  */
+.contacts {
+  padding: 55px 0;
+}
+
+.contacts__body {
+  display: flex;
+  justify-content: space-between;
+}
+
+.contacts__item {
+  max-width: 283px;
+  width: 100%;
+  height: 438px;
+
+  padding: 56px 47px;
+  background: var(--gradient-bg-forma2);
+}
+
+.contacts__item ul {
+  color: var(--color-white);
+}
+
+.contacts__item li {
+  display: flex;
+  flex-direction: column;
+
+  margin-bottom: 30px;
+}
+
+.contacts__item li span {
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 18px;
+  font-weight: bold;
+
+  margin-bottom: 20px;
+
+  margin-left: 20px;
+  padding-left: 0px;
+
+  transition: all .3s;
+}
+
+.contacts__item li span::before {
+  position: absolute;
+  content: "";
+
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+
+  left: -20px;
+
+  background: var(--color-red);
+  transition: all .3s;
+} 
+
+.contacts__item li:hover span {
+  padding-left: 10px;
+}
+
+.contacts__item li:hover span::before {
+  width: 7px;
+  height: 7px;
+}
+
+.contacts__item li a {
+  width: max-content;
+  margin-bottom: 5px;
+
+  transition: all .3s;
+}
+
+.contacts__item li a:hover {
+  opacity: .6;
+}
+
+.contacts__item li a:last-child {
+  margin-bottom: 0px;
+}
+
+.contacts__item li p {
+  line-height: 20px;
+}
+
+
+.contacts__map {
+  max-width: 750px;
+  width: 100%;
+  height: 551px;
+
+  margin: 0px 25px;
+}
+
+.forma_modify {
+  max-width: 297px;
+  height: 460px;
+
+  padding: 45px 49px;
+  background: var(--gradient-bg-forma2);
+
+  text-align: center;
+}
+
+textarea {
+  max-width: 258px;
+  width: 100%;
+  height: 40px;
+
+  border-radius: 6px;
+  border: 0;
+
+  padding: 20px;
+
+  font-family: "Lato";
+  color: var(--color-dark-blue);
+  resize: none;
+}
+textarea::placeholder {
+  color: var(--color-dark-blue);
 }
