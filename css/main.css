@@ -1251,7 +1251,7 @@ input::placeholder {
   margin-top: 20px;
 }
 
-/*  */
+/* ========== catalog-slider ========== */
 .catalog-slider {
   margin: 91px 0px 107px;
 }
@@ -1310,4 +1310,21 @@ input::placeholder {
 .catalog-slider__body .slick-arrow.slick-next {
   right: 10px;
   background: url("../img/icon/next-btn.svg") 0 0 / 100% no-repeat;
+}
+
+
+/* ========== Catalog Page ==========  */
+
+.catalog {
+  padding-bottom: 95px;
+}
+
+.catalog__body {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: 365px !important;
+  grid-auto-rows: minmax(365px, auto) !important;
+  grid-gap: 30px;
+
+  margin-top: 50px;
 }

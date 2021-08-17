@@ -406,10 +406,13 @@
     font-size: 25px;
   }
   .catalog-slider {
-    margin: 50px 0px;
+    margin: 30px 0px;
   }
   .catalog-slider .custom-btn {
     margin: 20px auto 0px;
+  }
+  .catalog {
+    padding-bottom: 30px;
   }
 }
 
