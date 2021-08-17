@@ -1279,7 +1279,7 @@ input::placeholder {
 }
 
 .catalog-slider__body .slick-slide {
-  margin: 0 10px;
+  margin: 0 auto;
 }
 
 .catalog-slider__body {

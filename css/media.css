@@ -143,6 +143,9 @@
     margin-right: 0px;
     margin-bottom: 0px;
   }
+  .subtitle {
+    max-width: 650px;
+  }
 }
 
 @media all and (max-width: 1024px) {
@@ -404,6 +407,9 @@
   }
   .catalog-slider {
     margin: 50px 0px;
+  }
+  .catalog-slider .custom-btn {
+    margin: 20px auto 0px;
   }
 }
 
