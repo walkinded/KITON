@@ -199,6 +199,9 @@
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 360px minmax(300px, auto);
   }
+  .catalog__body {
+    grid-template-columns: repeat(2, 1fr);
+  }
   .main-faq__body {
     flex-direction: column;
   }
@@ -418,6 +421,9 @@
 
 @media all and (max-width: 550px) {
   .main-catalog__body {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .catalog__body {
     grid-template-columns: repeat(1, 1fr);
   }
   .left-side__bottom .bottom__imput {

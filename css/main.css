@@ -1322,9 +1322,8 @@ input::placeholder {
 .catalog__body {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-template-rows: 365px !important;
   grid-auto-rows: minmax(365px, auto) !important;
   grid-gap: 30px;
-
+  
   margin-top: 50px;
 }
