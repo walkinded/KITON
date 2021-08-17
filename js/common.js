@@ -22,9 +22,36 @@ $(window).scroll(function() {
     }
 }); 
 
+$('.header_bg-color').addClass('original').clone().insertAfter('header').addClass('cloned').css('position','fixed').css('top','0').css('margin-top','0').css('z-index','500').removeClass('original').hide();
+
+scrollIntervalID = setInterval(stickIt, 10);
+
+
+function stickIt() {
+
+  var orgElementPos = $('.original').offset();
+  orgElementTop = orgElementPos.top;               
+
+  if ($(window).scrollTop() >= (orgElementTop)) {
+    // scrolled past the original position; now only show the cloned, sticky element.
+
+    // Cloned element should always have same left position and width as original element.     
+    orgElement = $('.original');
+    coordsOrgElement = orgElement.offset();
+    leftOrgElement = coordsOrgElement.left;  
+    widthOrgElement = orgElement.css('width');
+    $('.cloned').css('left',leftOrgElement+'px').css('top',0).css('width',widthOrgElement).show();
+    $('.original').css('visibility','hidden');
+  } else {
+    // not scrolled past the menu; only show the original menu.
+    $('.cloned').hide();
+    $('.original').css('visibility','visible');
+  }
+}
+
 
 /* ==================== libs ==================== */ 
-$(".phone").mask("+7(999)999-99-99");
+$("input[type=tel]").mask("+7(999)999-99-99");
 $(".fancybox").fancybox();
 
 
@@ -115,4 +142,70 @@ $('.tab_content').slick({
     }
     
   ]
+});
+
+$('.catalog-slider__body').slick({
+  arrows: true,
+  slidesToShow: 3,
+  rows: 1,
+  speed: 1000,
+  // autoplay: true,
+  responsive: [
+    {
+      breakpoint: 1601,
+      settings: {
+        arrows: true,
+        slidesToShow: 3,
+        // speed: 1000,
+      }
+    },
+    {
+      breakpoint: 1280,
+      settings: {
+        arrows: true,
+        slidesToShow: 2,
+        // speed: 1000,
+      }
+    },
+    {
+      breakpoint: 1000,
+      settings: {
+        slidesToShow: 1,
+        // speed: 1000,
+        arrows: true,
+      }
+    },
+    {
+      breakpoint: 769,
+      settings: {
+        slidesToShow: 2,
+        // speed: 1000,
+        arrows: false,
+        dots: true,
+      }
+    },
+    {
+      breakpoint: 641,
+      settings: {
+        slidesToShow: 1,
+        // speed: 1000,
+        arrows: false,
+        dots: true,
+      }
+    }
+    
+  ]
+});
+
+
+
+/* ==================== accordeon ==================== */
+
+$(document).ready(function() {
+  $('#accordion .accordion__wrap .accordion__head').on('click', function(){
+    $(this).closest('#accordion').find('.accordion__body').not($(this).next()).slideUp(500);
+    $(this).closest('#accordion').find('.accordion__head i').not($(this).find('i')).removeClass('rotate');
+    $(this).siblings('.accordion__body').slideToggle(500);
+    $(this).find('i').toggleClass('rotate');
+  });
 });
