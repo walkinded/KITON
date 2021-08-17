@@ -7,3 +7,5 @@
 2. Вопрос-ответ: https://walkinded.github.io/KITON/faq.html
 
 3. Каталог: https://walkinded.github.io/KITON/catalog.html
+
+4. Контакты: https://walkinded.github.io/KITON/contacts.html
