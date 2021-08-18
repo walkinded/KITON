@@ -9,3 +9,7 @@
 3. Каталог: https://walkinded.github.io/KITON/catalog.html
 
 4. Контакты: https://walkinded.github.io/KITON/contacts.html
+
+5. Статья: https://walkinded.github.io/KITON/article.html
+
+6. Правила возврата товара: https://walkinded.github.io/KITON/return-policy.html
