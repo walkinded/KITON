@@ -17,3 +17,5 @@
 7. О компании: https://walkinded.github.io/KITON/about-company.html
 
 8. Новости: https://walkinded.github.io/KITON/news.html
+
+9. Товар: https://walkinded.github.io/KITON/product.html
