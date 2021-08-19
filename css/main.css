@@ -1895,3 +1895,133 @@ textarea::placeholder {
 .did-not-find_bg-img .forma {
   justify-content: center;
 }
+
+/* ========== news Page ========== */
+.main-news {
+  margin-bottom: 51px;
+}
+.main-news__body {
+  margin-top: 37px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-auto-rows: minmax(590px, 1fr);
+  grid-gap: 30px;
+}
+.main-news__item {
+  background:var(--color-white);
+  padding: 12px;
+  transition: all .3s;
+  height: auto;
+}
+.main-news__item img {
+  transition: all .3s;
+  width: 100%;
+  max-height: 270px;
+  height: 100%;
+  object-fit: cover;
+}
+.main-news__item:hover img {
+  border-radius: 30px;
+
+}
+.main-news__item:hover {
+  box-shadow: 0 0px 10px 3px rgba(0, 0, 0, .3);
+}
+
+
+.main-news__text {
+  padding: 20px;
+  color: var(--color-dark-blue);
+}
+
+.main-news__text p {
+  font-size: 16px;
+  line-height: 25px;
+}
+
+.main-news__text span {
+  position: relative;
+  display: flex;
+
+  width: max-content;
+
+  font-size: 16px;
+  font-weight: 600;
+
+  margin-bottom: 25px;
+}
+.main-news__text span::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  bottom: -7px;
+  background: var(--color-red);
+}
+
+.main-news__title {
+  margin-bottom: 35px;
+}
+
+.main-news__title a{
+  font-size: 24px;
+  font-weight: 900;
+  color: var(--color-dark-blue);
+
+  transition: all .3s;
+}
+
+.main-news__title a:hover{
+  color: var(--color-red);
+}
+
+
+.main-news__item:first-child {
+  grid-column: auto / span 2;
+  display: flex;
+}
+.main-news__item:first-child img {
+  width: 493px;
+  /* width: 100%; */
+  min-height: 565px;
+  max-height: none !important;
+  height: 100%;
+
+  margin-right: 10px;
+}
+.main-news__item:first-child .main-news__title a{
+  font-size: 35px;
+}
+
+/* pagination */
+
+.pager {
+  margin: 60px auto 0px;
+  max-width: 625px;
+  width: 100%;
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.pager ul {
+  display: flex;
+}
+.pager ul li {
+  margin: 0px 25px;
+}
+.prev {
+}
+.page-numbers {
+  color: var(--color-dark-blue);
+}
+.page-numbers:hover:not(.current) {
+  color: var(--color-red);
+}
+.disabled {
+}
+.current {
+  color: var(--color-red);
+}
+.next {
+}
