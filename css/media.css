@@ -61,6 +61,10 @@
   .main-news__item:first-child img {
     width: 300px;
   }
+  .slider-big__item,
+  .gallery-img__slider-big {
+    max-width: 490px;
+  }
 }
 
 @media all and (max-width: 1366px) {
@@ -72,6 +76,7 @@
   .did-not-find .box-container {
     width: 100%;
   }
+  
 }
 
 @media all and (max-width: 1320px) {
@@ -100,6 +105,18 @@
     width: auto;
     align-items: center;
   }
+  .slider-big__item, .gallery-img__slider-big {
+    max-width: 390px;
+  }
+  .slider-small__item img {
+    max-width: 154px;
+  }
+  .gallery-img__slider-small {
+    max-width: 160px;
+  }
+  .gallery-img__slider-small .slick-arrow {
+    margin: -18px 63px;
+  }
 }
 
 @media all and (max-width: 1279px) {
@@ -113,7 +130,6 @@
     position: relative;
     left: 0px;
   }
-
 }
 
 @media all and (max-width: 1200px) {
@@ -316,6 +332,22 @@
   .head-persons-company__box {
     max-width: 100%;
   }
+  .main-product__body {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+  .slider-big__item, .gallery-img__slider-big {
+    max-width: 590px;
+  }
+  .main-product__gallery-img {
+    max-width: 100%;
+    width: auto;
+  }
+  .main-product__desc {
+    margin-left: 0;
+    margin-top: 30px;
+  }
 }
 
 @media all and (max-width: 980px) {
@@ -376,6 +408,13 @@
   .article ol {
     grid-template-columns: repeat(2, 1fr);
   }
+  .gallery-img__slider-small {
+    display: none;
+  }
+  .slider-big__item, .gallery-img__slider-big {
+    max-width: 100%;
+    height: auto;
+}
 }
 
 @media all and (max-width: 768px) {
@@ -531,7 +570,8 @@
     margin-top: 0px;
   }
 
-  .title {
+  .title,
+  .title h1 {
     font-size: 25px;
   }
   .catalog-slider {
@@ -589,8 +629,22 @@
   .why-choose-us__text {
     font-size: 35px;
   }
-
-  
+  .main-tabs {
+    padding: 20px;
+  }
+  .desc-tabs li {
+    margin-right: 20px;
+  }
+  .main-product__body {
+    margin-top: 20px;
+  }
+  .main-desc {
+    margin-bottom: 30px;
+  }
+  .items-from-this-category__wrap .title,
+  .items-from-this-category__wrap {
+    margin-bottom: 30px;
+}
 }
 
 @media all and (max-width: 550px) {
@@ -621,6 +675,10 @@
   .head-persons-company__box .box__wrap img {
     margin-bottom: 20px;
   }
+  .main-product__desc ul {
+    grid-template-columns: 1fr;
+  }
+
 }
 
 @media all and (max-width: 540px) {
@@ -681,6 +739,9 @@
   }
   .article ul li::before {
     left: -10px;
+  }
+  .main-product__form-min {
+    flex-direction: column;
   }
 }
 

@@ -72,6 +72,8 @@ $(document).ready(function(){
   });
 });
 
+
+
 /* ==================== tabs ==================== */
 $(document).ready(function($) {
   $('.tab_content').hide();
@@ -89,6 +91,20 @@ $(document).ready(function($) {
     $(selectTab).fadeIn();
   });
 });
+
+$('.desc-tab_content').hide();
+  $('.desc-tab_content:first').show();
+  $('.desc-tabs li:first').addClass('active');
+  $('.desc-tabs li').click(function(event) {
+    event.preventDefault();
+    $('.desc-tabs li').removeClass('active');
+    $(this).addClass('active');
+    $('.desc-tab_content').hide();
+
+    var selectTab = $(this).find('a').attr("href");
+
+    $(selectTab).fadeIn();
+  });
 
 /* ==================== slick slider ==================== */
 $('.tab_content').slick({
@@ -197,7 +213,93 @@ $('.catalog-slider__body').slick({
   ]
 });
 
+$('.gallery-img__slider-small').slick({
+  slidesToShow: 3,
+  vertical: true,
+  verticalSwiping: true,
+  asNavFor: ".gallery-img__slider-big",
+  responsive: [
+    {
+      breakpoint: 1281,
+      settings: {
+        arrows: true,
+        slidesToShow: 3
+      }
+    }
+  ]
+});
 
+$('.gallery-img__slider-big').slick({
+  slidesToShow: 1,
+  arrows: false,
+  pagination: true,
+  dots: true,
+  asNavFor: ".gallery-img__slider-small",
+  responsive: [
+    {
+      breakpoint: 768,
+      settings: {
+        slidesToShow: 1,
+        arrows: false,
+        dots: true
+      }
+    },
+  ]
+});
+
+
+$('.items-from-this-category').slick({
+  arrows: true,
+  slidesToShow: 5,
+  rows: 1,
+  speed: 1000,
+  // autoplay: true,
+  responsive: [
+    {
+      breakpoint: 1601,
+      settings: {
+        arrows: true,
+        slidesToShow: 4,
+        // speed: 1000,
+      }
+    },
+    {
+      breakpoint: 1280,
+      settings: {
+        arrows: true,
+        slidesToShow: 3,
+        // speed: 1000,
+      }
+    },
+    {
+      breakpoint: 1000,
+      settings: {
+        slidesToShow: 2,
+        // speed: 1000,
+        arrows: true,
+      }
+    },
+    {
+      breakpoint: 769,
+      settings: {
+        slidesToShow: 2,
+        // speed: 1000,
+        arrows: false,
+        dots: true,
+      }
+    },
+    {
+      breakpoint: 641,
+      settings: {
+        slidesToShow: 1,
+        // speed: 1000,
+        arrows: false,
+        dots: true,
+      }
+    }
+    
+  ]
+});
 
 /* ==================== accordeon ==================== */
 
