@@ -13,3 +13,5 @@
 5. Статья: https://walkinded.github.io/KITON/article.html
 
 6. Правила возврата товара: https://walkinded.github.io/KITON/return-policy.html
+
+7. О компании: https://walkinded.github.io/KITON/about-company.html
