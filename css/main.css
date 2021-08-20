@@ -2450,6 +2450,11 @@ textarea::placeholder {
   background:var(--color-red) !important;
 }
 
+.сategory__nav .accordion__body {
+  max-height: 354px;
+  overflow-y: scroll;
+}
+
 .сategory__nav .accordion__body ul li a {
   transition: all .3s;
 }
