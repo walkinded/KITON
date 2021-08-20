@@ -19,3 +19,5 @@
 8. Новости: https://walkinded.github.io/KITON/news.html
 
 9. Товар: https://walkinded.github.io/KITON/product.html
+
+10. Категория: https://walkinded.github.io/KITON/сategory.html

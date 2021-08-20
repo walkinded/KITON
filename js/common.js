@@ -310,4 +310,15 @@ $(document).ready(function() {
     $(this).siblings('.accordion__body').slideToggle(500);
     $(this).find('i').toggleClass('rotate');
   });
+
+  $('.сategory__nav #accordion .accordion__wrap .accordion__head').on('click',function() {
+    $(this).closest('#accordion').find('.accordion__head').not($(this)).removeClass('accordion__head_active');
+    $(this).toggleClass('accordion__head_active');
+  });
+});
+
+
+$('.сategory__nav_mobile').on('click', function(){
+  $(this).siblings('.item__accordion').slideToggle(500);
+  $(this).find('i').toggleClass('rotate');
 });
