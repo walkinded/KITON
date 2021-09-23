@@ -2567,7 +2567,7 @@ textarea::placeholder {
   font-size: 30px;
   width: max-content;
   color: #05213e;
-  margin: 0 auto;
+  margin: 0 auto 20px;
 }
 .map-link {
   max-width: 400px;
@@ -2576,6 +2576,7 @@ textarea::placeholder {
   border: 1px solid #043053;
   border-radius: 10px;
   padding: 20px;
+  margin: 0 20px;
 }
 .map-link li {
   list-style: decimal;
