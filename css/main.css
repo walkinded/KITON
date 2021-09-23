@@ -2554,3 +2554,36 @@ textarea::placeholder {
 .category-desc__title span {
   color: var(--color-red);
 }
+
+/* MAP LINKS */
+.map-bg-color {
+  background: var(--color-white);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+.map-link__name-proj {
+  font-size: 30px;
+  width: max-content;
+  color: #05213e;
+  margin: 0 auto;
+}
+.map-link {
+  max-width: 400px;
+  width: 100%;
+  height: auto;
+  border: 1px solid #043053;
+  border-radius: 10px;
+  padding: 20px;
+}
+.map-link li {
+  list-style: decimal;
+  margin-bottom: 10px;
+  margin-left: 30px;
+}
+
+.map-link li a {
+  font-size: 20px;
+  color: #043053;
+}
